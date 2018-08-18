@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main
+{
+  public static void main(String []args)
+  {
+        int sec,a,b,c;
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the seconds : ");
+		sec = in.nextInt(); 
+        a = sec%60;
+        b = sec/60;
+        c = b%60;
+        b = b/60;
+        System.out.println( "Hr : " + b + "  Min : " + c + "  Sec : " + a);
+  }
+}
