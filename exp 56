@@ -1,0 +1,15 @@
+import java.util.*;
+ public class Main 
+ {
+     public static void main(String[] args){
+		int a = 5;
+		int b = 20;
+		int c = 3;
+		System.out.println(range(a,b,c));
+	 } 		
+	public static int range(int a, int b, int c) {	
+		if (a%c == 0)
+			return( b/c - a/c + 1);
+		return(b/c - a/c);
+	}
+ }
