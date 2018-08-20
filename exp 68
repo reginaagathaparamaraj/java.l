@@ -1,0 +1,10 @@
+import java.lang.*;
+ public class Main
+ {
+ public static void main(String[] args)
+ {
+   String main = "Python 3.0";
+   String ch = main.substring(main.length() - 3);
+   System.out.println(ch + ch + ch + ch);
+  }
+}
