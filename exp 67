@@ -1,0 +1,10 @@
+import java.lang.*;
+ public class Main 
+ {
+ public static void main(String[] args)
+ {
+   String main = "Introduction to Programming";
+   String str = "Web";
+   System.out.println(main.substring(0, 16) + str + main.substring(15));
+	}
+}
