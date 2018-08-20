@@ -1,0 +1,33 @@
+import java.util.*;
+ public class Main {
+ public static void main(String[] args)
+ {
+    int a = 1;
+	int s = 0; 
+	int n = 0; 
+    	while (s < 100) 
+    	{
+			n++; 
+			if (n % 2 != 0) 
+			{ 
+				if (prime(n)) {
+					a += n; 
+					s++; 
+				}
+			}	
+		}
+		System.out.println("\nSum of the first 100 prime numbers: "+a); 	
+	 }
+	
+   	public static boolean prime(int n) 
+   	{
+		for (int i = 3; i * i <= n; i+= 2) 
+		{
+			if (n % i == 0) {
+				return false; 
+			}
+		}
+		return true;
+	}
+}
+
