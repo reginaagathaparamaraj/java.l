@@ -1,0 +1,27 @@
+import java.util.*;
+ public class Main 
+ {
+     public static void main(String[] args)
+     {	
+     int a,b,x,y;
+     Scanner in = new Scanner(System.in);
+     System.out.println("Enter first number");
+     a=in.nextInt();
+     System.out.println("Enter second number");
+     b=in.nextInt();
+    if((a>25)&&(a<75))
+    {
+        if((b>25)&&(b<75))
+        {
+            x = a%10;
+            y = b%10;
+            a/=10;
+            b/=10;
+            if((a==b)||(a==y)||(x==b)||(x==y))
+            System.out.println("Result : true");
+        }
+    }
+        System.out.println("Result : false");
+     }
+ }
+
