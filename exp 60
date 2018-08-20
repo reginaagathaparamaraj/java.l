@@ -1,0 +1,11 @@
+import java.util.*;
+ public class Main
+ {
+     public static void main(String[] args){	
+     Scanner in = new Scanner(System.in);
+     System.out.print("Enter a Sentence : ");
+	 String str = in.nextLine();
+	 String[] word = str.split("[ ]+");
+	 System.out.println("Penultimate word: "+word[word.length - 2]);
+	 }			
+}
