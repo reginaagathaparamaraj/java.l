@@ -1,0 +1,17 @@
+import java.util.*;
+ public class Main 
+ {
+     public static void main(String[] args)
+     {	
+     int a,b,c;
+     Scanner in = new Scanner(System.in);
+     System.out.println("Enter first number");
+     a=in.nextInt();
+     System.out.println("Enter first number");
+     b=in.nextInt();
+     System.out.println("Enter first number");
+     c=in.nextInt();
+     System.out.println("Result : " +(Math.abs(a - b) >= 20 || Math.abs(b - c) >= 20 || Math.abs(c - a) >= 20));
+}
+}
+
