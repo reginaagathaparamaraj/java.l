@@ -1,0 +1,17 @@
+import java.util.*;
+ public class Main 
+ {
+     public static void main(String[] args)
+     {	
+     Scanner in = new Scanner(System.in);
+     System.out.print("\nEnter a word: ");
+	 String w = in.nextLine();
+	 w = w.trim();
+	 String arr = ""; 
+     char[] ch=w.toCharArray();  
+	 for (int i = ch.length - 1; i >= 0; i--) 
+			 arr += ch[i];
+		
+	 System.out.println("Reversed word: "+arr.trim()); 
+	 }			
+}
