@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ public class Main {
+     public static void main(String[] args){
+      Scanner in = new Scanner(System.in);
+      System.out.print("Input an integer: ");
+      int a = in.nextInt(); 
+
+		System.out.println(result(a));
+	 } 		
+	public static int result(int n) {	
+		int ctr = 0;
+        for(int i=1; i<=(int)Math.sqrt(n); i++) {
+            if(n%i==0 && i*i!=n) {
+                ctr+=2;
+            } else if (i*i==n) {
+                ctr++;
+            }
+        }
+        return ctr;
+	}
+}
