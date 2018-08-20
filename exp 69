@@ -1,0 +1,9 @@
+import java.lang.*;
+ public class Main 
+ {
+ public static void main(String[] args)
+ {
+   String main = "Database";
+   System.out.println(main.substring(0,main.length()/2));
+	}
+}
